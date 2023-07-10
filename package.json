@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/luislucena16/marketplace-challenge#readme",
   "dependencies": {
-    "hardhat": "^2.16.1"
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "@openzeppelin/contracts": "^4.9.2",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.16.1",
+    "hardhat-gas-reporter": "^1.0.9"
   }
 }
