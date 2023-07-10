@@ -12,8 +12,8 @@ It's also possible to `cancel` a market item, transferring it back to the owner.
 
 # Easy Deployment
 
-Frontend is automatically deployed using Vercel's Github integration, but contracts have to be manually deployed to keep a better control on them.  
-However, new deployed contract addresses can be updated on the frontend simply by running a script that modifies Vercel's project environment variables and triggers a new frontend deployment.
+Contracts have to be manually deployed to keep a better control on them. By having the contracts deployed you can interact with the frontend automatically.
+Follow the instructions:
 
 # How to run
 
@@ -25,13 +25,6 @@ However, new deployed contract addresses can be updated on the frontend simply b
 - Make sure to import local Account #0 and #1 into Metamask accounts.
 
 # Troubleshooting
-
-## Mumbai marketplace setup command is breaking with a 'estimate gas failed' error
-
-Try changing `hardhat.config.js` mumbai gas values.  
-I'm using the ones I've found here:  
-https://forum.moralis.io/t/deploy-to-polygon-matic-mumbai-fails/700
-
 ## Nouce is too high
 
 Reset your Metamask account transaction history.  
