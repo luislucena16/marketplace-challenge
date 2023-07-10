@@ -4,7 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:localhost": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:mumbai": "hardhat run scripts/deploy.js --network mumbai",
+    "setup-marketplace:localhost": "hardhat run scripts/setupMarket.js --network localhost",
+    "setup-marketplace:mumbai": "hardhat run scripts/setupMarket.js --network mumbai",
+    "setup": "npm run deploy:localhost && npm run setup-marketplace:localhost",
+    "env": "hardhat run scripts/updateVercelEnviromentKeys.js --network mumbai"
   },
   "repository": {
     "type": "git",
@@ -18,11 +29,38 @@
   },
   "homepage": "https://github.com/luislucena16/marketplace-challenge#readme",
   "dependencies": {
-    "@nomiclabs/hardhat-ethers": "^2.2.3",
-    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "@emotion/cache": "^11.11.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/server": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.13.7",
+    "@mui/material": "^5.13.7",
+    "@mui/styles": "^5.13.7",
+    "@nomiclabs/hardhat-ethers": "^2.0.4",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
     "@openzeppelin/contracts": "^4.9.2",
+    "axios": "^1.4.0",
+    "chai": "^4.3.7",
     "dotenv": "^16.3.1",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.3",
+    "form-data": "^4.0.0",
+    "formidable": "^3.5.0",
     "hardhat": "^2.16.1",
-    "hardhat-gas-reporter": "^1.0.9"
+    "ipfs-http-client": "^60.0.1",
+    "multiparty": "^4.2.3",
+    "next": "^12.0.8",
+    "next-connect": "^0.11.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.24.1",
+    "react-infinite-scroll-component": "^6.1.0",
+    "web3modal": "^1.9.12"
+  },
+  "devDependencies": {
+    "@types/prop-types": "^15.7.5",
+    "add": "^2.0.6",
+    "hardhat-gas-reporter": "^1.0.9",
+    "prop-types": "^15.8.1"
   }
 }
