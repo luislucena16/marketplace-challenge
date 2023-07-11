@@ -31,9 +31,7 @@ Use `npm run test`
 # Troubleshooting
 ## Nouce is too high
 
-Reset your Metamask account transaction history.
-
-`In your account:`
+Reset your Metamask account transaction history:
 
 - Go to `Settings`
 - Then to `Advanced`
