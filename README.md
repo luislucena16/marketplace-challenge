@@ -24,9 +24,25 @@ Follow the instructions:
 - Make sure to use `Localhost 8545` as the Metamask's network
 - Make sure to import local Account #0 and #1 into Metamask accounts.
 
+# How to deploy
+
+- Set ACCOUNT_PRIVATE_KEY in `.env.local` and send it some Polygon's Testnet [Matic](https://faucet.polygon.technology/) tokens
+- Run `npm run deploy:mumbai` to deploy contracts to Polygon`s Testnet (Mumbai)
+- Do the same for ACCOUNT2_PRIVATE_KEY env and run `npm run setup-marketplace:mumbai` to setup the marketplace with existing tokens and sales.
+- Add in `.env.local` your contract address of NFT and Marketplace, or copy and use this addresses:
+```bash
+MARKETPLACE_CONTRACT_ADDRESS_MUMBAI=0xA6D779781E15FAe73809F8Bafc48cC859013Ca2d
+NFT_CONTRACT_ADDRESS_MUMBAI=0x433f2605CD7d4671C2466EB35Aba6C30d753ee00
+```
+- Make sure to use `Polygon Testnet Mumbai` as Metamask's network
+
 # Running test
 
-Use `npm run test`
+- `npm run test`
+
+# Clean cache
+
+- `npx hardhat clean`
 
 # Troubleshooting
 ## Nouce is too high
