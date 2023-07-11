@@ -27,6 +27,10 @@ Follow the instructions:
 # Troubleshooting
 ## Nouce is too high
 
-Reset your Metamask account transaction history.  
-Find out more on:  
-https://medium.com/@thelasthash/solved-nonce-too-high-error-with-metamask-and-hardhat-adc66f092cd
+Reset your Metamask account transaction history.
+
+`In your account:`
+
+- Go to `Settings`
+- Then to `Advanced`
+- Finally to `Clear activity tab data`

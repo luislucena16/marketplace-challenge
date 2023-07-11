@@ -19,17 +19,17 @@ contract NFT is ERC721URIStorage {
         marketplaceAddress = _marketplaceAddress;
     }
 
-    function mintToken(string memory tokenURI) public returns (uint256) {
+    function mintToken(string memory tokenURIimg) public returns (uint256) {
         _tokenIds.increment();
         uint256 newItemId = _tokenIds.current();
         _mint(msg.sender, newItemId);
         _creators[newItemId] = msg.sender;
-        _setTokenURI(newItemId, tokenURI);
+        _setTokenURI(newItemId, tokenURIimg);
 
         // Give the marketplace approval to transact NFTs between users
         setApprovalForAll(marketplaceAddress, true);
 
-        emit TokenMinted(newItemId, tokenURI, marketplaceAddress);
+        emit TokenMinted(newItemId, tokenURIimg, marketplaceAddress);
         return newItemId;
     }
 
