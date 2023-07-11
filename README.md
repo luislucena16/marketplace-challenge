@@ -24,6 +24,10 @@ Follow the instructions:
 - Make sure to use `Localhost 8545` as the Metamask's network
 - Make sure to import local Account #0 and #1 into Metamask accounts.
 
+# Running test
+
+Use `npm run test`
+
 # Troubleshooting
 ## Nouce is too high
 
